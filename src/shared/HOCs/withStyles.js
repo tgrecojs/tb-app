@@ -13,13 +13,6 @@ import {
   ACCENT_COLOR_TWO,
   ACCENT_COLOR__THREE
 } from '../../constants/theme';
-import AppBar from 'material-ui/AppBar';
-import Link from 'next/link';
-
-import IconButton from 'material-ui/IconButton';
-import IconMenu from 'material-ui/IconMenu';
-import MenuItem from 'material-ui/MenuItem';
-import MoreVertIcon from 'material-ui/svg-icons/navigation/more-vert';
 
 try {
   injectTapEventPlugin();
@@ -77,15 +70,6 @@ const withMaterialUI = ComposedComponent => {
               <meta name="viewport" content="initial-scale=1.0, width=device-width" />
               <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" />
             </Head>
-            <style>
-              {`
-          form, .flex-col {
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-          }
-          `}
-            </style>
             <MuiThemeProvider muiTheme={muiTheme}>
               <ComposedComponent
                 {...this.props}
